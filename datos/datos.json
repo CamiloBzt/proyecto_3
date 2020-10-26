@@ -6,5 +6,15 @@
    "5000": {
       "nombre": "",
       "edad": ""
+   },
+   "10007623812": {
+      "nombre": "juan polla larga",
+      "edad": 19,
+      "genero": 1
+   },
+   "5219430": {
+      "nombre": "maria cachafa",
+      "edad": 69,
+      "genero": 0
    }
 }

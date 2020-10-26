@@ -1,4 +1,4 @@
-from mostrar_datos.carga_datos import carga_dic
+from mostrar_datos.carga_datos import carga_dic, export_dic
 from validaciones.validar import val_num, val_gen, val_nombre, val_cedula
 
 
@@ -7,9 +7,11 @@ def llenar_datos(ruta_encuesta):
     datos = dict()
     print('\n\nBienvenido\n\n')
     cedula = val_cedula('\tDigite su cedula:')
-    nombre = val_nombre('\tIngrese su nombre: ')
-    edad = val_num('\tIngrese su edad: ')
-    genero = val_gen('\t Ingrese su genero (1: masculino, 0: femenino): ')
+    datos['nombre'] = val_nombre('\tIngrese su nombre: ')
+    datos['edad'] = val_num('\tIngrese su edad: ')
+    datos['genero'] = val_gen('\tIngrese su genero (1: masculino, 0: femenino): ')
+    encuestados[cedula] = datos
+    export_dic(ruta_encuesta, encuestados)
 
 
 def preguntar(ruta_encuesta, ruta_preguntas):
