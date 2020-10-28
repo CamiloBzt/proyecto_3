@@ -32,4 +32,3 @@ def print_categoria(suma):
     else:
         print('Usted pertenece a la categoria: CONVENCIONAL')
         return 'CONVENCIONAL'
-    return total
