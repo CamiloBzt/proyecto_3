@@ -1,4 +1,5 @@
 from mostrar_datos.carga_datos import carga_dic, export_dic
+from mostrar_datos.carga_datos import carga_dic
 import numpy as np
 
 
@@ -31,4 +32,4 @@ def print_categoria(suma):
     else:
         print('Usted pertenece a la categoria: CONVENCIONAL')
         return 'CONVENCIONAL'
-
+    return total
