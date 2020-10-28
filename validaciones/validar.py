@@ -37,3 +37,11 @@ def val_opcion(mensaje):
         opci = input(mensaje)
     return opci
 
+
+def val_resp(mensaje):
+    resp = input(mensaje)
+    respuestas = ['a', 'b', 'c', 'A', 'B', 'C']
+    while resp not in respuestas:
+        print('\nSeleccione bien su respuesta')
+        resp = input(mensaje)
+    return resp
